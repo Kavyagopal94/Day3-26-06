@@ -13,6 +13,10 @@ public class Line implements Comparable<Line>
     private double length() {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
+	@Override
+    public int compareTo(Line other) {
+        return Double.compare(this.length(), other.length());
+    }
 
     @Override
     public boolean equals(Object obj) {
@@ -41,6 +45,10 @@ public class Line implements Comparable<Line>
         System.out.println(line1.equals(line2)); 
         System.out.println(line1.equals(line3)); 
         System.out.println(line1.equals(line4)); 
+
+        System.out.println(line1.compareTo(line2));
+        System.out.println(line1.compareTo(line3)); 
+        System.out.println(line1.compareTo(line4)); 
      
 }
 }
