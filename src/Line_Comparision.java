@@ -1,8 +1,8 @@
 public class Line
 {
-    double x1, y1, x2, y2;
+    int x1, y1, x2, y2;
 
-    public Line(double x1, double y1, double x2, double y2)
+    public Line(int x1, int y1, int x2, int y2)
     {
         this.x1 = x1;
         this.y1 = y1;
@@ -10,7 +10,7 @@ public class Line
         this.y2 = y2;
     }
 
-    public double calculateLength() 
+    public int calculateLength() 
     {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
