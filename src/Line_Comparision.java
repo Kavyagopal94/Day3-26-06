@@ -15,11 +15,6 @@ public class Line implements Comparable<Line>
     }
 
     @Override
-    public int compareTo(Line other) {
-        return Double.compare(this.length(), other.length());
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -46,9 +41,6 @@ public class Line implements Comparable<Line>
         System.out.println(line1.equals(line2)); 
         System.out.println(line1.equals(line3)); 
         System.out.println(line1.equals(line4)); 
-
-        System.out.println(line1.compareTo(line2));
-        System.out.println(line1.compareTo(line3)); 
-        System.out.println(line1.compareTo(line4));      
+     
 }
 }
