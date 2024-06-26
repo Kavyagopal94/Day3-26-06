@@ -54,10 +54,6 @@ public class Line
         System.out.println("Line1 equals Line3: " + line1.equals(line3));
         System.out.println("Line1 equals Line4: " + line1.equals(line4)); 
         
-        System.out.println(line1.hashCode());
-        System.out.println(line2.hashCode());
-        System.out.println(line3.hashCode());
-        System.out.println(line4.hashCode());
     }
 
 
